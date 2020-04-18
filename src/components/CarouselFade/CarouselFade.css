@@ -1,0 +1,55 @@
+.CarouselFade-slideshow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .CarouselFade-slideshow li {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-size: contain;
+    background-position-x: 50%;
+    background-position-y: 30%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+  }
+  
+  .CarouselFade-slideshow li:nth-child(1) {
+    background-image: url(../../assets/images/cmo01.jpg);
+  }
+  .CarouselFade-slideshow li:nth-child(2) {
+    background-image: url(../../assets/images/cmo03.jpg);
+    animation-delay: -4s;
+  }
+  .CarouselFade-slideshow li:nth-child(3) {
+    background-image: url(../../assets/images/cmo04.jpg);
+    animation-delay: -2s;
+  }
+  
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    33% {
+      opacity: 1;
+    }
+    53% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  

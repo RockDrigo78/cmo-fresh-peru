@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/images/logo.jpeg";
+import logo from "../../assets/images/cmo_logo.jpg";
 import {
   Collapse,
   Navbar,
@@ -23,8 +23,8 @@ const NavbarMain = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div>
-      <Navbar color="light" light expand="md">
+    <div className="NavbarMain">
+      <Navbar color="white" light expand="md">
         <Link className="" to="/">
         <NavbarBrand href="/">
           <img className="logo" src={logo} alt="Logo" />
