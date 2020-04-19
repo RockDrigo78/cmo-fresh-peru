@@ -1,13 +1,11 @@
 import React from "react";
 import "./Home.css";
-import SimpleSlider from "../Carousel/Carousel";
-import CarouselFade from "../CarouselFade/CarouselFade";
+import Carousel from "../Carousel/Carousel";
 
 function Home() {
   return (
     <div className="Home">
-      < SimpleSlider />   
-      < CarouselFade />  
+      <Carousel />
     </div>
   );
 }

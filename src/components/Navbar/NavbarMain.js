@@ -26,25 +26,21 @@ const NavbarMain = (props) => {
     <div className="NavbarMain">
       <Navbar color="white" light expand="md">
         <Link className="" to="/">
-        <NavbarBrand href="/">
-          <img className="logo" src={logo} alt="Logo" />
-        </NavbarBrand>
+          <NavbarBrand href="/">
+            <img className="logo" src={logo} alt="Logo" />
+          </NavbarBrand>
         </Link>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
               <Link className="" to="/services">
-                <NavLink>
-                  Services
-                </NavLink>
+                <NavLink>Services</NavLink>
               </Link>
             </NavItem>
             <NavItem>
               <Link className="" to="/prices">
-                <NavLink>
-                  Prices
-                </NavLink>
+                <NavLink>Prices</NavLink>
               </Link>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>

@@ -1,2 +1,33 @@
-.Carousel {
+.Carousel .carousel-text-container {
+  position: absolute;
+  top: 53%;
+  margin-left: 3vw;
+  overflow-wrap: normal;
+  z-index: 1;
+}
+
+.Carousel .carousel-text-title {
+  color: #fff;
+  margin: 0;
+  font-size: 4vw;
+  text-shadow: 0 0 4px #000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.Carousel .carousel-text-content {
+  color: #fff;
+  margin: 0;
+  font-size: 2vw;
+  text-shadow: 0 0 4px #000;
+}
+
+.Carousel img {
+  width: 100%;
+}
+
+.Carousel hr {
+  margin: 0;
+  border-top: 2px solid #c54819;
+  text-shadow: 0 0 2px #000;
 }
