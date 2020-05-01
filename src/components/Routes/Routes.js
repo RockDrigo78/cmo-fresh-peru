@@ -9,7 +9,7 @@ import LandingPage from "../LandingPage/LandingPage";
 class Routes extends Component {
   render() {
     const getNews = props => {
-      if(props.match.params.newsTitle){
+      if(props.match.params.newsTitle !== undefined){
         let newsTitle = props.match.params.newsTitle;
         let currentNews = this.props.items.articles.find(
           item => item.title.toLowerCase() === newsTitle.toLowerCase()
