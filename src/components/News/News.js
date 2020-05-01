@@ -7,6 +7,19 @@ function News(props) {
 
   console.log("item: ", item);
 
+  if (item === undefined) {
+    return (
+    <div className="News">
+      <div className="News-back-button">
+        <Link className="btn btn-success" to="/home">
+          Go Back
+        </Link>
+      </div>
+      <div>News not available, please return to home</div>
+    </div>
+    )
+  }
+
   return (
     <div className="News">
       <div className="News-back-button">
@@ -14,7 +27,11 @@ function News(props) {
           Go Back
         </Link>
       </div>
-      <img className="News-image" src={item.urlToImage} alt="News" />
+      <img
+        className="News-image"
+        src={item.urlToImage ? item.urlToImage : ""}
+        alt="News"
+      />
       <p className="NewsList-articles-source">
         {item.author} Date:
         {item.publishedAt}
