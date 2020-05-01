@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 function News(props) {
   let { item } = props;
 
-  console.log("item: ", item);
-
   if (item === undefined) {
     return (
     <div className="News">

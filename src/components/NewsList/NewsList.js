@@ -3,6 +3,11 @@ import { Link } from "react-router-dom";
 import "./NewsList.css";
 
 function NewsList(props) {
+  
+  if (!props.isLoaded) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <div className="NewsList">
       <div className="NewsList-articles">
