@@ -4,7 +4,7 @@ import "./NewsList.css";
 
 function NewsList(props) {
   
-  if (!props.isLoaded) {
+  if (props.items.articles === undefined) {
     return <div>Loading...</div>;
   }
 
