@@ -15,7 +15,7 @@ class App extends Component {
 
   componentDidMount() {
     var url =
-      "http://newsapi.org/v2/top-headlines?" +
+      "https://newsapi.org/v2/top-headlines?" +
       "country=us&" +
       "apiKey=7fb5557b0e1147debd530d7de88d1a33";
     var req = new Request(url);
