@@ -9,11 +9,12 @@ import LandingPage from "../LandingPage/LandingPage";
 class Routes extends Component {
   render() {
     const getNews = props => {
-      let newsTitle = props.match.params.newsTitle;
-      let currentNews = this.props.items.articles.find(
-        item => item.title.toLowerCase() === newsTitle.toLowerCase()
-      );
-      return <News {...props} item={currentNews} />
+      if(props.match.params.newsTitle){
+        let newsTitle = props.match.params.newsTitle;
+        let currentNews = this.props.items.articles.find(
+          item => item.title.toLowerCase() === newsTitle.toLowerCase()
+        );
+        return <News {...props} item={currentNews} />}
     };
     
     return (
