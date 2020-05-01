@@ -39,10 +39,6 @@ class App extends Component {
   }  
 
   render() {
-
-    if (!this.state.isLoaded) {
-      return <div>Loading...</div>;
-    }
     
     return (
       <div className="App">
