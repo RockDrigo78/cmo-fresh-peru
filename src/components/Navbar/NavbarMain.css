@@ -1,3 +1,10 @@
+.NavbarMain {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+
 @media only screen and (max-width: 600px) {
   /* Extra small devices (phones, 600px and down) */
   .NavbarMain .logo {

@@ -9,11 +9,11 @@ import {
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText,
+  // UncontrolledDropdown,
+  // DropdownToggle,
+  // DropdownMenu,
+  // DropdownItem,
+  // NavbarText,
 } from "reactstrap";
 import "./NavbarMain.css";
 
@@ -24,28 +24,39 @@ const NavbarMain = (props) => {
 
   return (
     <div className="NavbarMain">
-      <Navbar color="white" light expand="md">
-        <Link className="" to="/">
-          <NavbarBrand href="/">
-            <img className="logo" src={logo} alt="Logo" />
-          </NavbarBrand>
-        </Link>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
-            <NavItem>
-              <Link className="" to="/services">
-                <NavLink>Services</NavLink>
-              </Link>
-            </NavItem>
-            <NavItem>
-              <Link className="" to="/prices">
-                <NavLink>Prices</NavLink>
-              </Link>
-            </NavItem>
-            <UncontrolledDropdown nav inNavbar>
+      <div className="NavbarMain-container">
+        <Navbar color="white" light expand="md">
+          <Link className="" to="/">
+            <NavbarBrand href="/">
+              <img className="logo" src={logo} alt="Logo" />
+            </NavbarBrand>
+          </Link>
+          <NavbarToggler onClick={toggle} />
+          <Collapse isOpen={isOpen} navbar>
+            <Nav className="" navbar>
+              <NavItem onClick={isOpen ? toggle : ""}>
+                <Link className="" to="/custom-product-statistics">
+                  <NavLink>Custom Product Statistics</NavLink>
+                </Link>
+              </NavItem>
+              <NavItem onClick={isOpen ? toggle : ""}>
+                <Link className="" to="/qc-pre-departure">
+                  <NavLink>QC Pre-Departure</NavLink>
+                </Link>
+              </NavItem>
+              <NavItem onClick={isOpen ? toggle : ""}>
+                <Link className="" to="/commercial-inteligence">
+                  <NavLink>Commercial Intelligence</NavLink>
+                </Link>
+              </NavItem>
+              <NavItem onClick={isOpen ? toggle : ""}>
+                <Link className="" to="/contact-us">
+                  <NavLink>Contact us</NavLink>
+                </Link>
+              </NavItem>
+              {/* <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
-                More...
+                Visit us on...
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>Facebook</DropdownItem>
@@ -53,11 +64,11 @@ const NavbarMain = (props) => {
                 <DropdownItem divider />
                 <DropdownItem>About Us</DropdownItem>
               </DropdownMenu>
-            </UncontrolledDropdown>
-          </Nav>
-          <NavbarText>CMO Fresh Peru: 01 232-2332332</NavbarText>
-        </Collapse>
-      </Navbar>
+            </UncontrolledDropdown> */}
+            </Nav>
+          </Collapse>
+        </Navbar>
+      </div>
     </div>
   );
 };

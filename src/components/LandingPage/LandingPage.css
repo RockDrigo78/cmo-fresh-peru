@@ -1,3 +1,7 @@
+.LandingPage {
+  min-height: 800px;
+}
+
 .LandingPage .LandingPage-text {
   text-align: center;
   display: block;

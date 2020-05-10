@@ -1,0 +1,36 @@
+.CommercialInteligence {
+  min-height: 800px;
+  margin: 30px 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .CommercialInteligence {
+    margin: 30px 80px;
+  }
+}
+
+.btn {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.CommercialInteligence-image {
+  width: 100%;
+}
+
+.CommercialInteligence-title {    
+  color: #C54819;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.CommercialInteligence-content {    
+  color: rgba(0,0,0,.5);
+  font-weight: bold;
+  margin-right: 20%;
+  margin-bottom: 50px;
+}
+
+.CommercialInteligence-content li {
+  margin-bottom: 30px;
+}
