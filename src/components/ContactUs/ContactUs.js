@@ -17,7 +17,7 @@ function ContactUs (){
             <label>Name</label>
             <input type="text" name="name" className="form-control inp_txt" placeholder="Name" required/>
           </div>
-          <input type="hidden" name="_cc" value="aldofigueroa78@gmail.com" />
+          <input type="hidden" name="_cc" value="rbdwebdevelopment@gmail.com" />
           <div className="form-group">
             <label>Email</label>
             <input type="email" placeholder="email" name="_replyto" className="form-control inp_txt" required/>

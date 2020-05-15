@@ -26,7 +26,7 @@ const NavbarMain = (props) => {
     <div className="NavbarMain">
       <div className="NavbarMain-container">
         <Navbar color="white" light expand="md">
-          <Link className="" to="/">
+          <Link className="" to="/home">
             <NavbarBrand href="/">
               <img className="logo" src={logo} alt="Logo" />
             </NavbarBrand>
