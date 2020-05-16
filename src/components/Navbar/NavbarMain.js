@@ -36,17 +36,26 @@ const NavbarMain = (props) => {
             <Nav className="" navbar>
               <NavItem onClick={isOpen ? toggle : ""}>
                 <Link className="" to="/custom-product-statistics">
-                  <NavLink>Custom Product Statistics</NavLink>
-                </Link>
-              </NavItem>
-              <NavItem onClick={isOpen ? toggle : ""}>
-                <Link className="" to="/qc-pre-departure">
-                  <NavLink>QC Pre-Departure</NavLink>
+                  <NavLink>
+                    <div>Custom Product</div>
+                    <div>Statistics</div>
+                  </NavLink>
                 </Link>
               </NavItem>
               <NavItem onClick={isOpen ? toggle : ""}>
                 <Link className="" to="/commercial-inteligence">
-                  <NavLink>Commercial Intelligence</NavLink>
+                  <NavLink>
+                    <div>Commercial</div>
+                    <div>Intelligence</div>
+                  </NavLink>
+                </Link>
+              </NavItem>
+              <NavItem onClick={isOpen ? toggle : ""}>
+                <Link className="" to="/qc-pre-departure">
+                  <NavLink>
+                    <div>QC</div>
+                    <div>Pre-Departure</div>
+                  </NavLink>
                 </Link>
               </NavItem>
               <NavItem onClick={isOpen ? toggle : ""}>

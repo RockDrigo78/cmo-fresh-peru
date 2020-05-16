@@ -2,12 +2,15 @@
   min-height: 800px;
 }
 
+.LandingPage-image {
+  width: 100%;
+}
+
 .LandingPage .LandingPage-text {
   text-align: center;
   display: block;
   color: #7b8d55;
   font-size: 4vw;
-  padding-top: 34vw;
   text-shadow: 0 0 2px #fff;
   font-weight: bold;
 }

@@ -5,6 +5,16 @@
   z-index: 5;
 }
 
+.nav-link {
+  text-align: center;
+  margin: 0 20px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
 @media only screen and (max-width: 600px) {
   /* Extra small devices (phones, 600px and down) */
   .NavbarMain .logo {
