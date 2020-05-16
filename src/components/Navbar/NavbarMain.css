@@ -5,15 +5,22 @@
   z-index: 5;
 }
 
-.nav-link {
-  text-align: center;
-  margin: 0 20px;
+.nav-item:not(:first-child) {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.nav-item {
+.nav-link {
+  display: inline-flex;
+}
+
+/* .nav-item {
   display: flex;
   align-items: center;
 }
+
+.nav-item:not(:first-child) {
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+} */
 
 @media only screen and (max-width: 600px) {
   /* Extra small devices (phones, 600px and down) */
@@ -33,6 +40,21 @@
   /* Medium devices (landscape tablets, 768px and up) */
   .NavbarMain .logo {
     height: 50px;
+  }
+
+  .nav-link {
+    text-align: center;
+    margin: 0 20px;
+  }
+
+  .nav-item {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-item:not(:first-child) {
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: unset;
   }
 }
 
