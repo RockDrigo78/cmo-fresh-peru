@@ -7,11 +7,11 @@ import Footer from "../Footer/Footer";
 function Home() {
   return (
     <div className="Home">
-      <Parallax01 />     
-      <Parallax02 />  
-      <Parallax01 />     
-      <Parallax02 />     
-      <Footer />     
+      <Parallax01 />
+      <Parallax02 />
+      <Parallax01 />
+      <Parallax02 />
+      <Footer />
     </div>
   );
 }
