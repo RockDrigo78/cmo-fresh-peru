@@ -1,11 +1,11 @@
 import React from "react";
 import "./Carousel.css";
 import Slider from "react-slick";
-import asparagus04 from "../../assets/images/asparagus04.jpg";
-import avocados04 from "../../assets/images/avocados04.jpg";
-import arandanos02 from "../../assets/images/arandanos02.jpg";
-import asparagus05 from "../../assets/images/asparagus05.jpg";
-import grapes01 from "../../assets/images/grapes01.jpg";
+import asparagus04 from "../../assets/images/asparagus04-small.jpg";
+import avocados04 from "../../assets/images/avocados04-small.jpg";
+import arandanos02 from "../../assets/images/arandanos02-small.jpg";
+import asparagus05 from "../../assets/images/asparagus05-small.jpg";
+import grapes01 from "../../assets/images/grapes01-small.jpg";
 
 class Carousel extends React.Component {
   render() {
