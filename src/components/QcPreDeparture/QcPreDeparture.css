@@ -1,36 +1,63 @@
 .QcPreDeparture {
-  min-height: 800px;
-  margin: 30px 30px;
-}
-
-@media only screen and (min-width: 768px) {
-  .QcPreDeparture {
-    margin: 30px 80px;
-  }
-}
-
-.btn {
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-.QcPreDeparture-image {
-  width: 100%;
-}
-
-.QcPreDeparture-title {    
-  color: #C54819;
-  text-transform: uppercase;
-  margin-bottom: 50px;
-}
-
-.QcPreDeparture-content {    
-  color: rgba(0,0,0,.5);
-  font-weight: bold;
-  margin-right: 20%;
-  margin-bottom: 50px;
-}
-
-.QcPreDeparture-content li {
+  background: white;
+  min-height: 100vh;
   margin-bottom: 30px;
 }
+
+.QcPreDeparture-background {
+  position: relative;
+  /* The image used */
+  background-image: url("../../assets/images/avocados05-medium.jpg");
+
+  /* Full height */
+  height: 50vw;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.QcPreDeparture-text-title {
+  position: absolute;
+  background-color: transparent;
+  bottom: 0;
+  color: #fff;
+  margin-left: 25px;
+  font-size: 6vw;
+  text-shadow: 0 0 4px #000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.QcPreDeparture-text-content {
+  background-color: white;
+  font-size: 2vw;
+  height: 300px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.QcPreDeparture .button {
+  background-color: #c54819;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.QcPreDeparture .button:hover {
+  /* background-color: #a1b772; */
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 25px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.02) ;
+}
+

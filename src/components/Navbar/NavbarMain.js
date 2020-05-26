@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import logo from "../../assets/images/cmo_logo.jpg";
 import {
   Collapse,
@@ -23,42 +22,32 @@ const NavbarMain = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div className="NavbarMain">
+    <div className="NavbarMain" id="navbar">
       <div className="NavbarMain-container">
         <Navbar color="white" light expand="md">
-          <Link className="" to="/home">
-            <NavbarBrand href="/">
+            <NavbarBrand href="/home/#welcome-page">
               <img className="logo" src={logo} alt="Logo" />
             </NavbarBrand>
-          </Link>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="" navbar>
               <NavItem onClick={isOpen ? toggle : ""}>
-                <Link className="" to="/custom-product-statistics">
-                  <NavLink>
+                  <NavLink href="/home/#custom-product-statistics">
                     <div>Custom Product Statistics</div>
                   </NavLink>
-                </Link>
               </NavItem>
               <NavItem onClick={isOpen ? toggle : ""}>
-                <Link className="" to="/commercial-inteligence">
-                  <NavLink>
+                  <NavLink href="/home/#commercial-inteligence">
                     <div>Commercial Intelligence</div>
                   </NavLink>
-                </Link>
               </NavItem>
               <NavItem onClick={isOpen ? toggle : ""}>
-                <Link className="" to="/qc-pre-departure">
-                  <NavLink>
+                  <NavLink href="/home/#qc-pre-departure">
                     <div>QC Pre-Departure</div>
                   </NavLink>
-                </Link>
               </NavItem>
               <NavItem onClick={isOpen ? toggle : ""}>
-                <Link className="" to="/contact-us">
-                  <NavLink>Contact us</NavLink>
-                </Link>
+                  <NavLink href="/home/#footer">Contact us</NavLink>
               </NavItem>
               {/* <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>

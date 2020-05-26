@@ -1,3 +1,24 @@
 .Home {
-    min-height: 800px;
+  min-height: 800px;
+}
+
+.Home .scroll-up {
+  width: auto;
+  margin: 0;
+  padding: 5px 10px;
+  background: white;
+  border-radius: 5px;
+  visibility: hidden;
+  position: fixed;
+  bottom: -60px;
+  right: 40px;
+  color: #7b8d55;
+  opacity: 0;
+  transition: bottom 0.5s ease, visibility 0.5s ease, opacity 0.5s ease;
+}
+
+.Home .scroll-up.show {
+  visibility: visible;
+  bottom: 40px;
+  opacity: 1;
 }
