@@ -25,29 +25,29 @@ const NavbarMain = (props) => {
     <div className="NavbarMain" id="navbar">
       <div className="NavbarMain-container">
         <Navbar color="white" light expand="md">
-            <NavbarBrand href="/home/#welcome-page">
+            <NavbarBrand href="/home#welcome-page">
               <img className="logo" src={logo} alt="Logo" />
             </NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="" navbar>
               <NavItem onClick={isOpen ? toggle : ""}>
-                  <NavLink href="/home/#custom-product-statistics">
+                  <NavLink href="/home#custom-product-statistics">
                     <div>Custom Product Statistics</div>
                   </NavLink>
               </NavItem>
               <NavItem onClick={isOpen ? toggle : ""}>
-                  <NavLink href="/home/#commercial-inteligence">
+                  <NavLink href="/home#commercial-inteligence">
                     <div>Commercial Intelligence</div>
                   </NavLink>
               </NavItem>
               <NavItem onClick={isOpen ? toggle : ""}>
-                  <NavLink href="/home/#qc-pre-departure">
+                  <NavLink href="/home#qc-pre-departure">
                     <div>QC Pre-Departure</div>
                   </NavLink>
               </NavItem>
               <NavItem onClick={isOpen ? toggle : ""}>
-                  <NavLink href="/home/#footer">Contact us</NavLink>
+                  <NavLink href="/home#footer">Contact us</NavLink>
               </NavItem>
               {/* <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>

@@ -31,7 +31,7 @@ function Home() {
       <CommercialInteligence />
       <QcPreDeparture />
       <Footer />
-      <a className={`scroll-up ${show}`} href="/home/#welcome-page">
+      <a className={`scroll-up ${show}`} href="/home#welcome-page">
         Go to Top
       </a>
     </div>

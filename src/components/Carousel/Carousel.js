@@ -18,7 +18,7 @@ class Carousel extends React.Component {
       speed: 1000,
       slidesToShow: 1,
       slidesToScroll: 1,
-      pauseOnHover: true,
+      pauseOnHover: false,
       easing: "ease",
       className: "Carousel",
     };
