@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Home.css";
+import NavbarMain from "../Navbar/NavbarMain";
 import WelcomePage from "../WelcomePage/WelcomePage";
 import CustomProductStatistics from "../CustomProductStatistics/CustomProductStatistics";
 import CommercialInteligence from "../CommercialInteligence/CommercialInteligence";
@@ -26,6 +27,7 @@ function Home() {
 
   return (
     <div className="Home">
+      <NavbarMain />
       <WelcomePage />
       <CustomProductStatistics />
       <CommercialInteligence />

@@ -1,14 +1,13 @@
 .LandingPage {
-  min-height: 800px;
+  height: 100vh;
 }
 
-.LandingPage-image {
-  width: 100%;
+.LandingPage .CarouselFade {
+  margin-top: 20vh;
 }
 
 .LandingPage .LandingPage-text {
   text-align: center;
-  display: block;
   color: #7b8d55;
   font-size: 4vw;
   text-shadow: 0 0 2px #fff;

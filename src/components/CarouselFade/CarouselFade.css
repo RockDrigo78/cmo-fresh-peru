@@ -1,5 +1,6 @@
 .CarouselFade {
-  margin-top: 12vw;
+  position: relative;
+  height: 35vw;
 }
 
 .CarouselFade .CarouselFade-slideshow {
