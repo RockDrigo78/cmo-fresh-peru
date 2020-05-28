@@ -25,6 +25,10 @@ function Home() {
     }
   }
 
+  function scrollTop() {
+    window.scrollTo(0,0);
+  }
+
   return (
     <div className="Home">
       <NavbarMain />
@@ -33,9 +37,9 @@ function Home() {
       <CommercialInteligence />
       <QcPreDeparture />
       <Footer />
-      <a className={`scroll-up ${show}`} href="/home#welcome-page">
+      <div className={`scroll-up ${show}`} onClick={scrollTop}>
         Go to Top
-      </a>
+      </div>
     </div>
   );
 }
