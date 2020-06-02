@@ -7,20 +7,28 @@ function QcPreDeparture() {
       <div className="QcPreDeparture-background">
         <div className="QcPreDeparture-text-title">
           <p>Qc Pre Departure</p>
+          <hr/>
         </div>
       </div>
       <div className="QcPreDeparture-text-content">
         <ul>
-          <li>loren ipsum</li>
-          <li>loren ipsumm 023</li>
-          <li>Billions of USD in FOB terms</li>
-          <li>Importers and Exporters identified</li>
+          <li>
+            Few importers use or track departures in origin. Generally importers
+            make reports upon arrival when it is too late for servicing
+            customers.
+          </li>
+          <li>
+            We offer in origin pre-departure inspections and quick reports to
+            asses produce before is loaded into a container.
+          </li>
+          <li>
+            Ripeness, maturity average information, among other traits can help
+            manage expectations of arrivals and avoid bad surprises.
+          </li>
         </ul>
       </div>
       <div className="d-flex justify-content-center">
-        <button className="button">
-          Click Here to Receive a Free Sample
-        </button>
+        <button className="button">Click Here to Receive a Free Sample</button>
       </div>
     </div>
   );

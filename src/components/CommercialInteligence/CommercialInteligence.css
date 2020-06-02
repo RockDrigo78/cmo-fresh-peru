@@ -22,20 +22,26 @@
 .CommercialInteligence-row-container {
   margin-top: 20px;
   margin-bottom: 20px;
-  display: flex;  
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.CommercialInteligence-row-container:nth-child(2) {
+  flex-direction: column;
 }
 
 .CommercialInteligence-row-image {
   margin: 25px 25px;
-  height: 300px;
-  width: 50vw;
+  height: 200px;
+  width: 85vw;
   object-fit: cover;
 }
 
 .CommercialInteligence-text-title {
   position: absolute;
   background-color: transparent;
-  bottom: 0;
+  bottom: 40px;
   color: #fff;
   margin-left: 25px;
   font-size: 6vw;
@@ -44,13 +50,37 @@
   text-transform: uppercase;
 }
 
-.CommercialInteligence-text-content {
-  background-color: white;
-  font-size: 2vw;
-  height: 300px;
-  margin-top: 50px;
+.CommercialInteligence-text-title p {
+  margin-bottom: 0;
 }
 
+.CommercialInteligence-text-content {
+  background-color: white;
+  margin: 0 25px;
+  font-size: 15px;
+}
+
+@media only screen and (min-width: 600px) {
+  .CommercialInteligence-row-image {
+    height: 300px;
+    width: 50vw;
+  }
+
+  .CommercialInteligence-row-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .CommercialInteligence-row-container:nth-child(2) {
+    flex-direction: row;
+  }
+
+  .CommercialInteligence-text-content {
+    height: 300px;
+    font-size: 2vw;
+    margin-top: 50px;
+  }
+}
 
 .CommercialInteligence .button {
   background-color: #c54819;
@@ -74,3 +104,8 @@
     transform: scale(1.02) ;
 }
 
+.CommercialInteligence hr {
+  margin-top: 0;
+  border-top: 2px solid #c54819;
+  text-shadow: 0 0 2px #000;
+}

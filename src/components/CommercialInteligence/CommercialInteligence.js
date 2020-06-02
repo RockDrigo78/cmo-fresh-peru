@@ -1,14 +1,15 @@
 import React from "react";
 import "./CommercialInteligence.css";
-import statMobile from "../../assets/images/statistics-mobile03-small.jpg";
-import statDesktop from "../../assets/images/statistics-pc03-small.jpg";
+import statMobile from "../../assets/images/commercial-inteligence-01-medium.jpg";
+import statDesktop from "../../assets/images/commercial-inteligence-02-medium.jpg";
 
 function CommercialInteligence() {
   return (
     <div className="CommercialInteligence" id="commercial-inteligence">
       <div className="CommercialInteligence-background">
         <div className="CommercialInteligence-text-title">
-          <p>Commercial Inteligence</p>
+          <p>Commercial Intelligence</p>
+          <hr />
         </div>
       </div>
       <div className="CommercialInteligence-col">
@@ -19,22 +20,19 @@ function CommercialInteligence() {
             alt="mobile statistics"
           />
           <div className="CommercialInteligence-text-content">
-            <ul>
-              <li>100.000 containers exported per year</li>
-              <li>100 countries in the world</li>
-              <li>Billions of USD in FOB terms</li>
-              <li>Importers and Exporters identified</li>
-            </ul>
+            <div>
+              More in depth report informing about market decisions at origin in
+              response to information of supply & demand dynamics at
+              destinations markets worldwide
+            </div>
           </div>
         </div>
         <div className="CommercialInteligence-row-container">
           <div className="CommercialInteligence-text-content">
-            <ul>
-              <li>100.000 containers exported per year</li>
-              <li>100 countries in the world</li>
-              <li>Billions of USD in FOB terms</li>
-              <li>Importers and Exporters identified</li>
-            </ul>
+            <div>
+              These reports have Key information to anticipate potential supply
+              gaps or oversupply at destination markets
+            </div>
           </div>
           <img
             className="CommercialInteligence-row-image"
@@ -44,9 +42,7 @@ function CommercialInteligence() {
         </div>
       </div>
       <div className="d-flex justify-content-center">
-        <button className="button">
-          Click Here to Receive a Free Sample
-        </button>
+        <button className="button">Click Here to Receive a Free Sample</button>
       </div>
     </div>
   );

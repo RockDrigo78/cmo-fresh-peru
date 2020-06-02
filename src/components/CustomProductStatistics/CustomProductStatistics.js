@@ -9,6 +9,7 @@ function CustomProductStatistics() {
       <div className="CustomProductStatistics-background">
         <div className="CustomProductStatistics-text-title">
           <p>Custom Product Statistics</p>
+          <hr />
         </div>
       </div>
       <div className="CustomProductStatistics-col">
@@ -19,22 +20,14 @@ function CustomProductStatistics() {
             alt="mobile statistics"
           />
           <div className="CustomProductStatistics-text-content">
-            <ul>
-              <li>100.000 containers exported per year</li>
-              <li>100 countries in the world</li>
-              <li>Billions of USD in FOB terms</li>
-              <li>Importers and Exporters identified</li>
-            </ul>
+            <div>100.000 containers exported per year</div>
+            <div>100 countries in the world</div>
           </div>
         </div>
         <div className="CustomProductStatistics-row-container">
           <div className="CustomProductStatistics-text-content">
-            <ul>
-              <li>100.000 containers exported per year</li>
-              <li>100 countries in the world</li>
-              <li>Billions of USD in FOB terms</li>
-              <li>Importers and Exporters identified</li>
-            </ul>
+            <div>Billions of USD in FOB terms</div>
+            <div>Importers and Exporters identified</div>
           </div>
           <img
             className="CustomProductStatistics-row-image"
@@ -44,9 +37,7 @@ function CustomProductStatistics() {
         </div>
       </div>
       <div className="d-flex justify-content-center">
-        <button className="button">
-          Click Here to Receive a Free Sample
-        </button>
+        <button className="button">Click Here to Receive a Free Sample</button>
       </div>
     </div>
   );
