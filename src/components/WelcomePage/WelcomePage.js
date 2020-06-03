@@ -1,6 +1,7 @@
 import React from "react";
 import "./WelcomePage.css";
 import Carousel from "../Carousel/Carousel";
+import Formular from "../Formular/Formular";
 
 function WelcomePage() {
   return (
@@ -21,9 +22,7 @@ function WelcomePage() {
           help you improve your response to your customer needs.
         </p>
       </div>
-      <div className="d-flex justify-content-center">
-        <button className="button">Click Here to Receive a Free Sample</button>
-      </div>
+      <Formular />
     </div>
   );
 }

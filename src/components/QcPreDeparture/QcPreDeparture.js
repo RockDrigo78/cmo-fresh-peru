@@ -1,5 +1,6 @@
 import React from "react";
 import "./QcPreDeparture.css";
+import Formular from "../Formular/Formular";
 
 function QcPreDeparture() {
   return (
@@ -27,9 +28,7 @@ function QcPreDeparture() {
           </li>
         </ul>
       </div>
-      <div className="d-flex justify-content-center">
-        <button className="button">Click Here to Receive a Free Sample</button>
-      </div>
+      <Formular />
     </div>
   );
 }

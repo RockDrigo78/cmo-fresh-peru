@@ -2,6 +2,7 @@ import React from "react";
 import "./CustomProductStatistics.css";
 import statMobile from "../../assets/images/statistics-mobile03-small.jpg";
 import statDesktop from "../../assets/images/statistics-pc03-small.jpg";
+import Formular from "../Formular/Formular";
 
 function CustomProductStatistics() {
   return (
@@ -36,9 +37,7 @@ function CustomProductStatistics() {
           />
         </div>
       </div>
-      <div className="d-flex justify-content-center">
-        <button className="button">Click Here to Receive a Free Sample</button>
-      </div>
+      <Formular />
     </div>
   );
 }

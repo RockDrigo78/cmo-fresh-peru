@@ -2,6 +2,7 @@ import React from "react";
 import "./CommercialInteligence.css";
 import statMobile from "../../assets/images/commercial-inteligence-01-medium.jpg";
 import statDesktop from "../../assets/images/commercial-inteligence-02-medium.jpg";
+import Formular from "../Formular/Formular";
 
 function CommercialInteligence() {
   return (
@@ -41,9 +42,7 @@ function CommercialInteligence() {
           />
         </div>
       </div>
-      <div className="d-flex justify-content-center">
-        <button className="button">Click Here to Receive a Free Sample</button>
-      </div>
+      <Formular />
     </div>
   );
 }
