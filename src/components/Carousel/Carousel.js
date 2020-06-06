@@ -10,7 +10,7 @@ import grapes01 from "../../assets/images/grapes01-small.jpg";
 class Carousel extends React.Component {
   render() {
     var settings = {
-      dots: true,
+      dots: false,
       arrows: true,
       autoplay: true,
       autoplaySpeed: 4500,

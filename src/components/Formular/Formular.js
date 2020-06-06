@@ -33,23 +33,22 @@ function Formular() {
           
         <div class="Formular-overlay-content">
           <div class="Formular-overlay-header">
-            <span class="close" onClick={closeFormular}>
-              &times;
-            </span>
-            <h2>Free Sample Formular</h2>
+            <div className="Formular-overlay-header-title">Free Sample Formular
+            <span class="close" onClick={closeFormular}>X</span>
+            </div>
           </div>
           <div class="Formular-overlay-body">    
-            <form action="/action_page.php">
-                <label for="fname">First Name</label>
+            <form action="/home">
+                <label className="label-text" for="fname">First Name</label>
                 <input type="text" id="fname" name="firstname" placeholder="Name.." required/>
 
-                <label for="lname">Last Name</label>
+                <label className="label-text" for="lname">Last Name</label>
                 <input type="text" id="lname" name="lastname" placeholder="Last name.." required/>
 
-                <label for="email">E Mail</label>
+                <label className="label-text" for="email">E Mail</label>
                 <input type="email" id="email" name="email" placeholder="email.." required/>
 
-                <label for="country">Country</label>
+                <label className="label-text" for="country">Country</label>
                 <select id="country" name="country">
                     <option value="australia">Australia</option>
                     <option value="canada">Canada</option>
@@ -59,7 +58,7 @@ function Formular() {
                     <option value="peru">Peru</option>
                 </select>
 
-                <label for="phonenumber">Telephone Number</label>
+                <label className="label-text" for="phonenumber">Telephone Number</label>
                 <input type="number" id="phonenumber" name="phonenumber" placeholder="Phone number.."/>
 
                 <input type="submit" value="Submit" />

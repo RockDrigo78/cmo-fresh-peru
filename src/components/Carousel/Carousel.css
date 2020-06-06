@@ -1,5 +1,6 @@
 .Carousel {  
   margin-bottom: 40px;
+  overflow-x: hidden;
 }
 
 .Carousel .carousel-text-container {

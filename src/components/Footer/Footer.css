@@ -1,5 +1,6 @@
 .Footer {
     width: 100%;
+    min-height: 25vh;
     background-color: #7B8D55;
     color: white;
     text-align: center;
